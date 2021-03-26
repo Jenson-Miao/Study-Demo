@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--上面一行指定了该xml文档的版本和编码方式（必须放在开头）-->
+<!--project是pom文件所有配置的根标签，声明了一些POM相关的命名空间及xsd元素-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--指定了当前的POM模型的版本-->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--定义了项目属于哪个组-->
+    <groupId>com.miaojingu</groupId>
+    <!--项目名称-->
+    <artifactId>maven-demo</artifactId>
+    <!--项目版本号-->
+    <version>1.0-SNAPSHOT</version>
+</project>
