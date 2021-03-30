@@ -10,6 +10,8 @@
     <modules>
         <module>blog-util</module>
         <module>blog-api</module>
+        <module>blog-article</module>
+        <module>blog-generator</module>
     </modules>
     <!--    指定为pom类型-->
     <packaging>pom</packaging>

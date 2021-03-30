@@ -1,0 +1,33 @@
+server:
+  port: 8001 # 端口号
+  servlet:
+    context-path: /article # 上下文路径，请求前缀 ip：port/article
+
+spring:
+  application:
+    name: article-server # 应用名
+  # 数据库配置
+  datasource:
+    username: mjg_blog_article
+    password: 123456
+    url: jdbc:mysql://server.miaojingu.com:3306/mjg_blog_article?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    # mysql8版本以上驱动包指定新的驱动类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+      # 数据源其他配置, 在 DruidConfig配置类中手动绑定
+#      initialSize: 8
+#      minIdle: 5
+#      maxActive: 20
+#      maxWait: 60000
+#      timeBetweenEvictionRunsMillis: 60000
+#      minEvictableIdleTimeMillis: 300000
+#      validationQuery: SELECT 1 FROM DUAL
+
+mybatis-plus:
+  type-aliases-package: com.miaojingu.blog.entities # 自动扫描pojo类
+  # xxxMapper.xml 路径
+  mapper-locations: classpath*:com/miaojingu/blog/article/mapper/**/*.xml # 扫描的xml路径
+
+# 日志级别，会打印sql语句
+logging:
+  level:
+    com.mengxuegu.blog.article.mapper: debug

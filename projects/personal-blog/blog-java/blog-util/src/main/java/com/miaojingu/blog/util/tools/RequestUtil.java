@@ -5,7 +5,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class RequestUtil {
-
+    /**
+     * 解析请求头
+     * @param header
+     * @return
+     * @throws IOException
+     */
     public static String[] extractAndDecodeHeader(String header) throws IOException {
         // `Basic ` 后面开始截取 clientId:clientSecret
         byte[] base64Token = header.trim().substring(6).getBytes(StandardCharsets.UTF_8);
