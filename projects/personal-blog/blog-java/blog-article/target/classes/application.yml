@@ -30,4 +30,4 @@ mybatis-plus:
 # 日志级别，会打印sql语句
 logging:
   level:
-    com.mengxuegu.blog.article.mapper: debug
+    com.miaojingu.blog.article.mapper: debug
